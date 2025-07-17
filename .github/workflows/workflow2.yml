@@ -1,0 +1,13 @@
+name: Hello on src change
+
+on:
+  push:
+    paths:
+      - 'src/**'
+
+jobs:
+  conditional-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions!"
